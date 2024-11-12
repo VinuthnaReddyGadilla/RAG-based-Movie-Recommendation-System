@@ -10,7 +10,14 @@ This project builds a movie recommendation engine that allows users to get movie
 Contextual Explanations: For each recommendation, the app generates a short explanation detailing why the movie is a good fit.<br>
 Token Efficiency Metrics: Tracks and displays the token count for each recommendation to optimize computational efficiency.<br>
 ### Dataset
-The dataset used in this project is sourced from Kaggle: The Movies Dataset. It contains detailed information on movies, including titles, overviews, genres, popularity scores, and more.<br>
+**The dataset used in this project is sourced directly from the Hugging Face Datasets library**:
+
+from datasets import load_dataset<br>
+dataset = load_dataset("Pablinho/movies-dataset")["train"]<br>
+It contains detailed information on movies, including titles, overviews, genres, popularity scores, and more. No manual data download is required.<br>
+
+Preprocessing
+The dataset is filtered to include movies with non-empty titles, overviews, and genres. The overviews are converted to lowercase and stripped of extra spaces for consistency.
 
 ### Preprocessing
 The dataset is filtered to include movies with non-empty titles, overviews, and genres. The overviews are converted to lowercase and stripped of extra spaces for consistency.<br>
