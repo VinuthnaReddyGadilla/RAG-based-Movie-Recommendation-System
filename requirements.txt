@@ -3,6 +3,6 @@ numpy==1.26.0
 sentence-transformers==2.2.2
 scikit-learn==1.3.0
 datasets==2.14.4
-transformers==4.21.1
-torch==2.0.1+cpu  # CPU-only version
-tokenizers==0.10.3
+transformers==4.33.3
+torch==2.0.1+cpu
+tokenizers==0.13.3
